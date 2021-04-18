@@ -1,0 +1,5 @@
+en:
+  PLUGIN_EXTRAWATCH_GRAV_STATS:
+    PROJECT_ID: Your website's project ID
+    PROJECT_ID_HELP: "(Unique identifier of your website e.g.: c13c3589-ecf4-4d31-be57-57c2197847ff) You should find this ID in ExtraWatch app in \"Websites\" section or URL https://app.extrawatch.com/#/websites"
+
