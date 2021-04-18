@@ -11,8 +11,8 @@ homepage: https://www.extrawatch.com
 demo: https://www.extrawatch.com
 keywords: grav, plugin, tracking, google, analytics, stats, real time
 bugs: https://github.com/extrawatch/extrawatch-grav-stats/issues
-docs: https://github.com/extrawatch/extrawatch-grav-stats/blob/develop/README.md
-license: GPLv3
+docs: https://github.com/extrawatch/extrawatch-grav-stats/
+license: MIT
 
 dependencies:
   - { name: grav, version: '>=1.6.0' }

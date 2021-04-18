@@ -1,6 +1,31 @@
 # Extrawatch Grav Stats Plugin
 
 The **Extrawatch Grav Stats** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). 
+It integrates the ExtraWatch dashboard available from https://app.extrawatch.com into the Grav admin panel.
+It also renders javascript snippet, which tracks each visit. User just needs to enter its project ID.
+
+## Features:
+
+### Click heat map
+![Click Heatmap](images/click-heatmap.png)
+
+See the list of most popular pages sorted by most of the clicks. By selecting a page from the drop-down menu, website view below refreshes and opens the page with heat map overlay displaying the click heatmap.
+
+
+### Location on a map
+![Click Heatmap](images/02_location-full-screen.png)
+
+When there is a new visit from some other part of the world, the view moves to this location. It's very interesting to see how the whole world interacts with your web in real time.
+
+### Real time visits
+![Click Heatmap](images/real-time-visitors.png)
+
+Notification on each new visit of your website in real time
+
+### Track multiple websites
+![Click Heatmap](images/switch-websites.png)
+
+You are able to track multiple websites this way and switch between these websites in by using the drop-down in the upper right corner.
 
 
 
@@ -24,33 +49,18 @@ You should now have all the plugin files under
 
     /your/site/grav/user/plugins/extrawatch-grav-stats
 	
-> NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/f/grav-plugin-extrawatch-grav-stats/blob/master/blueprints.yaml).
 
-### Admin Plugin
-
-If you use the Admin Plugin, you can install the plugin directly by browsing the `Plugins`-menu and clicking on the `Add` button.
-
-## Configuration
-
-Before configuring this plugin, you should copy the `user/plugins/extrawatch-grav-stats/extrawatch-grav-stats.yaml` to `user/config/plugins/extrawatch-grav-stats.yaml` and only edit that copy.
-
-Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
 ```
 
-Note that if you use the Admin Plugin, a file with your configuration named extrawatch-grav-stats.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
-
 ## Usage
 
-**Describe how to use the plugin.**
+
+
 
 ## Credits
 
 **Did you incorporate third-party code? Want to thank somebody?**
-
-## To Do
-
-- [ ] Future plans, if any
 
