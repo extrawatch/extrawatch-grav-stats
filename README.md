@@ -13,17 +13,17 @@ See the list of most popular pages sorted by most of the clicks. By selecting a 
 
 
 ### Location on a map
-![Click Heatmap](images/location.png)
+![Location on a map](images/location.png)
 
 When there is a new visit from some other part of the world, the view moves to this location. It's very interesting to see how the whole world interacts with your web in real time.
 
 ### Real time visits
-![Click Heatmap](images/real-time-visitors.png)
+![Real time visits](images/real-time-visitors.png)
 
 Notification on each new visit of your website in real time
 
 ### Track multiple websites
-![Click Heatmap](images/switch-websites.png)
+![Track multiple websites](images/switch-websites.png)
 
 You are able to track multiple websites this way and switch between these websites in by using the drop-down in the upper right corner.
 
@@ -61,8 +61,7 @@ On enabling the plugin, you should see new icon in admin panel:
 
 ![Registration](images/register-1.png)
 
-When no project ID is specified in plugin settings, you will see registration form.
-After entering your email and confirmation, you 
+When no project ID is specified in plugin settings, you will see the login / register form.
 
 ![Registration](images/register-2.png)
 Enter your email and password
