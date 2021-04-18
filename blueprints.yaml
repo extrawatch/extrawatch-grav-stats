@@ -1,7 +1,7 @@
 name: ExtraWatch - Real-time analytics and Stats
 slug: extrawatch-grav-stats
 type: plugin
-version: 0.1.0
+version: 1.0.1
 description: extrawatch
 icon: plug
 author:

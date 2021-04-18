@@ -19,6 +19,7 @@ class ExtrawatchGravStatsPlugin extends Plugin
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ew, s);
     })();";
     const PROJECT_ID_FIELD_NAME = "projectId";
+    const EXTRAWATCH_GRAV_STATS = 'extrawatch-grav-stats';
 
 
     /**
@@ -60,8 +61,8 @@ class ExtrawatchGravStatsPlugin extends Plugin
     }
 
     public function onAdminMenu() {
-        $this->grav['twig']->plugins_hooked_nav['PLUGIN_EXTRAWATCH.PAGE.TITLE'] = [
-            'route' => '/extrawatch', 'icon' => 'fa-bar-chart'
+        $this->grav['twig']->plugins_hooked_nav['PLUGIN_EXTRAWATCH_GRAV_STATS.PAGE.TITLE'] = [
+            'route' => '/'.self::EXTRAWATCH_GRAV_STATS, 'icon' => 'fa-bar-chart'
         ];
     }
 
@@ -78,7 +79,7 @@ class ExtrawatchGravStatsPlugin extends Plugin
 
     public function addHeaderWithExtraWatchProjectId() {
         $config = $this->grav['config'];
-        $extraWatchPlugin = $config->plugins['extrawatch-grav-stats'];
+        $extraWatchPlugin = $config->plugins[self::EXTRAWATCH_GRAV_STATS];
         if ($extraWatchPlugin) {
             $projectId = $extraWatchPlugin[self::PROJECT_ID_FIELD_NAME];
             if ($projectId) {

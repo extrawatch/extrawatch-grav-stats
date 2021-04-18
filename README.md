@@ -13,7 +13,7 @@ See the list of most popular pages sorted by most of the clicks. By selecting a 
 
 
 ### Location on a map
-![Click Heatmap](images/02_location-full-screen.png)
+![Click Heatmap](images/location.png)
 
 When there is a new visit from some other part of the world, the view moves to this location. It's very interesting to see how the whole world interacts with your web in real time.
 
@@ -57,10 +57,35 @@ enabled: true
 
 ## Usage
 
+On enabling the plugin, you should see new icon in admin panel:
+
+![Registration](images/register-1.png)
+
+When no project ID is specified in plugin settings, you will see registration form.
+After entering your email and confirmation, you 
+
+![Registration](images/register-2.png)
+Enter your email and password
 
 
+![Registration](images/register-3.png)
+Check your email and log in
 
-## Credits
+![Registration](images/register-4.png)
+Click "Add website"
 
-**Did you incorporate third-party code? Want to thank somebody?**
+![Registration](images/register-5.png)
+Enter your website's URL and confirm
+
+![Registration](images/register-6.png)
+Copy your project ID
+
+![Registration](images/register-7.png)
+Enter this website's ID into plugin settings and click save
+
+![Registration](images/dashboard.png)
+After entering and saving your project ID, when you click on icon in admin menu, 
+you should see dashboard with list of visitors who visit your website in real time.
+
+
 
