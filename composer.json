@@ -1,0 +1,29 @@
+{
+  "name": "f/extrawatch-grav-stats",
+  "type": "grav-plugin",
+  "description": "asdf",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/f/grav-plugin-extrawatch-grav-stats",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "adsf",
+      "email": "adsf@adsf.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\ExtrawatchGravStats\\": "classes/"
+    },
+    "classmap":  ["extrawatch-grav-stats.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+name: ExtraWatch - Real-time analytics and Stats
+slug: extrawatch-grav-stats
+type: plugin
+version: 0.1.0
+description: extrawatch
+icon: plug
+author:
+  name: extrawatch.com
+  email: info at extrawatch com
+homepage: https://www.extrawatch.com
+demo: https://www.extrawatch.com
+keywords: grav, plugin, tracking, google, analytics, stats, real time
+bugs: https://github.com/extrawatch/extrawatch-grav-stats/issues
+docs: https://github.com/extrawatch/extrawatch-grav-stats/blob/develop/README.md
+license: GPLv3
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    projectId:
+      type: text
+      validate:
+        required: true
+        message: "Not valid Project ID. Should be in format - e.g.: c13c3589-ecf4-4d31-be57-57c2197847ff. Please check: https://app.extrawatch.com/#/websites"
+        pattern: ^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+      label: PLUGIN_EXTRAWATCH_GRAV_STATS.PROJECT_ID
+      help: PLUGIN_EXTRAWATCH_GRAV_STATS.PROJECT_ID_HELP
