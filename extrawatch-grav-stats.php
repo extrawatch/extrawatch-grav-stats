@@ -53,20 +53,11 @@ class ExtrawatchGravStatsPlugin extends Plugin
             ]);
             return;
         }
-
         // Enable the main events we are interested in
         $this->enable([
-            // Put your main events here
+            'onPageInitialized' => [['onPageInitialized', 10]],
         ]);
     }
-
-
-/*
-    public function onPluginsInitialized() {
-        // Don't proceed if we are in the admin plugin
-
-        $this->addHeaderWithProjectId();
-    }*/
 
     public function onAdminMenu() {
         $this->grav['twig']->plugins_hooked_nav['PLUGIN_EXTRAWATCH.PAGE.TITLE'] = [
@@ -80,14 +71,19 @@ class ExtrawatchGravStatsPlugin extends Plugin
 
     }
 
-    public function addHeaderWithProjectId() {
+    public function onPageInitialized() {
+        $this->addHeaderWithExtraWatchProjectId();
+    }
+
+
+    public function addHeaderWithExtraWatchProjectId() {
         $config = $this->grav['config'];
-        $extraWatchPlugin = $config->plugins['extrawatch'];
+        $extraWatchPlugin = $config->plugins['extrawatch-grav-stats'];
         if ($extraWatchPlugin) {
             $projectId = $extraWatchPlugin[self::PROJECT_ID_FIELD_NAME];
             if ($projectId) {
                 $assets = $this->grav['assets'];
-                $assets->addInlineJs(sprintf(ExtrawatchPlugin::SNIPPET, $projectId));
+                $assets->addInlineJs(sprintf(ExtrawatchGravStatsPlugin::SNIPPET, $projectId));
             }
         }
     }
